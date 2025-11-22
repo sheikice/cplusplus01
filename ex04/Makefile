@@ -6,7 +6,7 @@
 #    By: jwuille <jwuille@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/04 17:48:04 by jwuille           #+#    #+#              #
-#    Updated: 2025/11/09 12:40:56 by jwuille          ###   ########.fr        #
+#    Updated: 2025/11/22 15:36:00 by jwuille          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ SRC =	\
 
 CC = c++ -MD -std=c++98
 CFLAGS = -Wall -Werror -Wextra -g3
-NAME = tests
+NAME = sed
 
 OBJ = $(addprefix $(OBJ_DIR)/,$(SRC:.cpp=.o))
 
