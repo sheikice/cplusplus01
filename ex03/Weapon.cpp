@@ -4,13 +4,13 @@
 Weapon::Weapon() : _type("")
 {
 	std::cout << "\033[1;32m"
-		"The weapon "<< _type << " was created"
+		"The weapon "<< _type << " was constructed"
 		<< "\033[0m" << std::endl;
 }
 Weapon::Weapon(const std::string& type): _type(type)
 {
 	std::cout << "\033[1;32m"
-		"The weapon "<< _type << " was created"
+		"The weapon "<< _type << " was constructed"
 		<< "\033[0m" << std::endl;
 }
 
@@ -28,8 +28,5 @@ const std::string& Weapon::getType(void) const
 
 void	Weapon::setType(const std::string& newType)
 {
-	std::cout << "\033[1;33m"
-		"The weapon "<< _type << " has became a " << newType
-		<< "\033[0m" << std::endl;
 	_type = newType;
 }

@@ -7,7 +7,7 @@
 HumanA::HumanA(const std::string& name, Weapon& weapon) : _name(name), _weapon(weapon)
 {
 	std::cout << "\033[1;32m"
-		<< _name << " was created and it holds " << _weapon.getType()
+		<< _name << " was constructed and it holds " << _weapon.getType()
 		<< "\033[0m" << std::endl;
 }
 
@@ -29,7 +29,4 @@ void HumanA::attack(void) const
 void	HumanA::setWeapon(const Weapon& weapon)
 {
 	_weapon = weapon;
-	std::cout << "\033[1;33m"
-		<< _name << " now holds " << weapon.getType()
-		<< "\033[0m" << std::endl;
 }
